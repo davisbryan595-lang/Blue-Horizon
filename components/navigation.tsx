@@ -21,10 +21,6 @@ export function Navigation() {
               height={52}
               className="rounded-full"
             />
-            <div>
-              <h1 className="text-xl font-serif font-bold text-foreground">Blue Horizon</h1>
-              <p className="text-sm text-muted-foreground">Aviation Detailing & More</p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
