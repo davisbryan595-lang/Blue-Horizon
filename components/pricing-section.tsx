@@ -92,9 +92,10 @@ export function PricingSection() {
                 </ul>
 
                 <Button
+                  asChild
                   className={`w-full ${tier.popular ? "bg-primary hover:bg-primary/90 glow-effect" : "bg-secondary hover:bg-secondary/90"}`}
                 >
-                  Get Started
+                  <a href="#contact">Get Started</a>
                 </Button>
               </CardContent>
             </Card>
@@ -105,8 +106,8 @@ export function PricingSection() {
           <p className="text-muted-foreground mb-4">
             *Pricing varies based on vehicle size, condition, and specific requirements
           </p>
-          <Button variant="outline" size="lg" className="hover-glow bg-transparent">
-            Request Custom Quote
+          <Button asChild variant="outline" size="lg" className="hover-glow bg-transparent">
+            <a href="#contact">Request Custom Quote</a>
           </Button>
         </div>
       </div>

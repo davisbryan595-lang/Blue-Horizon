@@ -14,13 +14,16 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
-            <Image
-              src="/images/logo.png"
-              alt="Blue Horizon Detailing"
-              width={52}
-              height={52}
-              className="rounded-full"
-            />
+            <Link href="#home" className="flex items-center" aria-label="Go to home">
+              <Image
+                src="/images/logo.png"
+                alt="Blue Horizon Detailing"
+                width={56}
+                height={56}
+                className="rounded-full w-12 h-12 md:w-14 md:h-14"
+                priority
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -46,11 +49,15 @@ export function Navigation() {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="hover-glow bg-transparent">
-              <Phone className="w-4 h-4 mr-2" />
-              (727) 269-7757
+            <Button asChild variant="outline" size="sm" className="hover-glow bg-transparent">
+              <a href="tel:+17272697757">
+                <Phone className="w-4 h-4 mr-2" />
+                (727) 269-7757
+              </a>
             </Button>
-            <Button className="bg-primary hover:bg-primary/90 glow-effect">Get Quote</Button>
+            <Button asChild className="bg-primary hover:bg-primary/90 glow-effect">
+              <Link href="#contact">Get Quote</Link>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -81,11 +88,15 @@ export function Navigation() {
               Contact
             </Link>
             <div className="flex flex-col space-y-2 pt-4">
-              <Button variant="outline" size="sm">
-                <Phone className="w-4 h-4 mr-2" />
-                (727) 269-7757
+              <Button asChild variant="outline" size="sm">
+                <a href="tel:+17272697757">
+                  <Phone className="w-4 h-4 mr-2" />
+                  (727) 269-7757
+                </a>
               </Button>
-              <Button className="bg-primary hover:bg-primary/90">Get Quote</Button>
+              <Button asChild className="bg-primary hover:bg-primary/90">
+                <Link href="#contact">Get Quote</Link>
+              </Button>
             </div>
           </div>
         )}

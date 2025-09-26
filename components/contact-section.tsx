@@ -173,13 +173,17 @@ export function ContactSection() {
 
             {/* CTA Buttons */}
             <div className="space-y-4">
-              <Button className="w-full bg-primary hover:bg-primary/90 glow-effect" size="lg">
-                <Phone className="w-5 h-5 mr-2" />
-                Call Now for Immediate Service
+              <Button asChild className="w-full bg-primary hover:bg-primary/90 glow-effect" size="lg">
+                <a href="tel:+17272697757">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Call Now for Immediate Service
+                </a>
               </Button>
-              <Button variant="outline" className="w-full hover-glow bg-transparent" size="lg">
-                <Mail className="w-5 h-5 mr-2" />
-                Email for Detailed Quote
+              <Button asChild variant="outline" className="w-full hover-glow bg-transparent" size="lg">
+                <a href="mailto:zakariahdorman@gmail.com">
+                  <Mail className="w-5 h-5 mr-2" />
+                  Email for Detailed Quote
+                </a>
               </Button>
             </div>
           </div>
