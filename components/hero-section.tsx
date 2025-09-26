@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Phone, MessageSquare } from "lucide-react"
+import { Phone, MessageSquare, Car, Ship, Plane } from "lucide-react"
 
 export function HeroSection() {
   return (
