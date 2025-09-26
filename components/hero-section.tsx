@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Phone, MessageSquare } from "lucide-react"
+import { Phone, MessageSquare, Car, Ship, Plane } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -39,21 +39,21 @@ export function HeroSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="text-center group">
               <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-card flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <span className="text-3xl">🚗</span>
+                <Car className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-serif font-semibold text-foreground mb-2">Cars</h3>
               <p className="text-muted-foreground">Premium automotive detailing</p>
             </div>
             <div className="text-center group">
               <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-card flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <span className="text-3xl">⛵</span>
+                <Ship className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-serif font-semibold text-foreground mb-2">Boats</h3>
               <p className="text-muted-foreground">Marine vessel care & detailing</p>
             </div>
             <div className="text-center group">
               <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-card flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <span className="text-3xl">✈️</span>
+                <Plane className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-serif font-semibold text-foreground mb-2">Aircraft</h3>
               <p className="text-muted-foreground">Aviation detailing & maintenance</p>
