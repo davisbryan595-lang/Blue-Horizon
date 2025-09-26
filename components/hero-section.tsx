@@ -26,13 +26,17 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 glow-effect text-lg px-8 py-4">
-              <MessageSquare className="w-5 h-5 mr-2" />
-              Get a Quote
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 glow-effect text-lg px-8 py-4">
+              <a href="#contact">
+                <MessageSquare className="w-5 h-5 mr-2" />
+                Get a Quote
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="hover-glow text-lg px-8 py-4 bg-transparent">
-              <Phone className="w-5 h-5 mr-2" />
-              Call Now
+            <Button asChild size="lg" variant="outline" className="hover-glow text-lg px-8 py-4 bg-transparent">
+              <a href="tel:+17272697757">
+                <Phone className="w-5 h-5 mr-2" />
+                Call Now
+              </a>
             </Button>
           </div>
 
