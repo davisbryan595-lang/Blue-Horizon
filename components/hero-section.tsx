@@ -6,12 +6,12 @@ export function HeroSection() {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img src="/luxury-private-jet-on-tarmac-at-sunset-with-dramat.jpg" alt="Luxury aircraft detailing" className="w-full h-full object-cover" />
+        <img src="https://images.pexels.com/photos/69121/passenger-traffic-airline-aviation-air-transportation-69121.jpeg" alt="Car and jet composition reflecting both automotive and aviation" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/50" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-12 md:mt-20">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-balance mb-6">
             <span className="metallic-text">Altitude to Horizon,</span>
