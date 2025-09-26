@@ -5,7 +5,8 @@ export function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 grid grid-cols-1 md:grid-cols-2">
+        <img src="/professional-detailer-working-on-luxury-car-in-han.jpg" alt="Luxury car detailing" className="w-full h-full object-cover" />
         <img src="/luxury-private-jet-on-tarmac-at-sunset-with-dramat.jpg" alt="Luxury aircraft detailing" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/50" />
       </div>
