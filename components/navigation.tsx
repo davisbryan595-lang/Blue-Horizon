@@ -12,13 +12,13 @@ export function Navigation() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
             <Image
               src="/images/logo.png"
               alt="Blue Horizon Detailing"
-              width={60}
-              height={60}
+              width={52}
+              height={52}
               className="rounded-full"
             />
             <div>
